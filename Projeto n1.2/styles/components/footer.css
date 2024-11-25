@@ -1,0 +1,22 @@
+footer{
+    background-color: var(--cor-branca);
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    margin-top: 200px;
+}
+.eita{
+    display: flex;
+    justify-content: center;
+
+}
+
+.piriri{
+    margin-left: 5px ;
+    font-weight: bold;
+    color: #6200EA; /* Cor roxa vibrante */
+    margin-bottom: 5px;
+    background: linear-gradient(90deg, #6200EA, #fc00f8, #0048ff);
+    -webkit-background-clip: text;
+    color: transparent;
+
+}

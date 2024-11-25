@@ -1,0 +1,85 @@
+main {
+    display:flex;
+    flex-direction: row;
+}
+section {
+    padding: 50px;
+
+}
+section h1{
+    margin-top: 40px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #6200EA; /* Cor roxa vibrante */
+    margin-bottom: 45px;
+    background: linear-gradient(90deg, #6200EA, #ff00ff, #16739e);
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+
+section p{
+    margin-left: 83px;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    display: flex;
+    text-align: center;
+    max-width: 500px;
+}
+
+aside{
+    margin-top: 40px;
+    margin-left: 20px;
+    display: flex; /* Define o layout como Flexbox */
+    flex-direction: row; /* Centraliza as imagens horizontalmente */
+    align-items: center; /* Alinha as imagens verticalmente */
+    flex-wrap: wrap; /* Faz as imagens quebrarem linha em telas menores */
+    width: 100px; /* Limita a largura total da galeria */
+    height: 100px;
+}
+
+ .Block-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-left: 50px;
+ }
+
+ .Block-img img {
+    width: 100%; /* Faz as imagens ocuparem o espaço da célula */
+    border-radius: 15px; /* Bordas arredondadas */
+    object-fit: cover;
+    width: 275px;
+    height: 225px;
+}
+
+aside div img{
+    transition: all ease 0.5s;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.635);
+}
+
+aside div img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(255, 0, 238, 0.512);
+}
+
+button {
+    display: block;
+    margin-top: 30px;
+    margin-left: 198px;
+    padding: 0.8rem 6rem;
+    background: var(--cor-neon);
+    color: var(--cor-branca);
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.3);
+    border: solid;
+}
+
+button:hover{
+    background: linear-gradient(45deg, var(--cor-gradiente-1), var(--cor-gradiente-2));
+    color: var(--cor-branca);
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
+}

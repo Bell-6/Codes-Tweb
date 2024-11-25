@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'segoe UI', sans-serif;
+}
+
+:root {
+    --cor-neon: #8a2be2;
+    --cor-gradiente-1: #e26374;
+    --cor-gradiente-2: #760074;
+    --cor-branca: #f5f3f7;
+    --cor-texto: #0d0218;
+    --box-shadow: 0 2px 15px rgba(137, 43, 226, 0.3);
+}
