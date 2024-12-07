@@ -17,7 +17,8 @@ nav ul{
 
 nav a {
     text-decoration: none;
-    color: black ;
+    color: black;
+    transition: all ease 0.5s;
 }
 
 nav ul li{
@@ -30,5 +31,19 @@ nav ul li{
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--corprm) ;
+}
 
+--root {
+    --corprm: #9696bf;
+}
+
+
+nav a:hover{
+    color: white;
+}
+
+footer {
+   text-align: center;
+   justify-content: center;
 }
