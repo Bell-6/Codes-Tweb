@@ -1,7 +1,5 @@
 @import url('../../styles/global.css');
 
-@import url('../../styles/global.css');
-
 .title{
     font-size:x-large;
     text-align: center;
@@ -15,7 +13,6 @@
 .inf1 img {
     width: 20%;
     padding: 30px;
-    border: 0 10px 0 black;
 }
 
 .inf2{
@@ -37,6 +34,6 @@
 
 }
 .inf3 img {
-    justify-content: center;
-    align-items: center ;
+    margin: auto;
+    width: 30%;
 }
