@@ -26,13 +26,15 @@ nav a{
 }
 
 header img {
-    width: 6%;
+    width: 10%;
+    padding: 30px;
 }
 
 main {
     display: flex;
-    margin-top: 61px ;
+    margin-top: 55px ;
 }
+
 .bloco1{
     width: 50%;
 }
@@ -47,15 +49,16 @@ main {
 }
 
 .bloco2 img {
-    width: 50%;
+    width: 70%;
     position: absolute;
     display: flex;
     justify-content: right;
+    border-radius: 35px;
 }
 
 footer {
     text-align: center;
-    margin-top: 400px;
+    margin-top: 200px;
     background-color: #bae9e9;
     
 }
