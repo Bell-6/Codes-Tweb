@@ -1,0 +1,86 @@
+@import url('../../styles/global.css');
+ 
+.banner {
+    justify-items: center;
+    justify-content: space-around;
+    margin-bottom:25px;
+}
+
+.banner img {
+    margin-top: 25px;
+    width: 15%;
+    justify-content: center;
+}
+
+.imagens{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    margin-left: 50px;
+
+}
+
+.imagens img{
+    width: 100%; /* Faz as imagens ocuparem o espaço da célula */
+    border-radius: 15px; /* Bordas arredondadas */
+    object-fit: cover;
+    width: 230px;
+    height: 210px;
+    box-shadow: 0 3px 5px;
+    transition: all ease 0.5s;
+}
+
+.imagens img:hover{
+    transform: scale(1.25);
+    box-shadow: 0 6px 10px #000;
+}
+
+.titulo {
+    margin-top: 40px;
+    font-weight: bold;; /* Cor roxa vibrante */
+    margin-bottom: 45px;
+    background: linear-gradient(90deg, #0a9611, rgb(202, 5, 5), rgb(240, 240, 3));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: xx-large;
+    text-align: center;
+}
+
+button {
+    margin-left: 100vh;
+    padding: 10px; 
+    border-radius: 60px ; 
+    transition: all ease 1.5s;
+    margin-top: 40px;
+    background: linear-gradient(90deg, #862a2b, rgb(196, 113, 40) );
+    border: firebrick;
+}
+
+ button a{
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+    }
+    
+button:hover{    
+    background: linear-gradient(90deg, #bd2225, rgb(225, 132, 51) );
+    transition-duration: 1.5s;
+ }
+
+ @media (max-width: 480px){
+    
+    .imagens {
+        display: block;
+        padding: 50px; 
+        margin-left: 70px;
+        margin-top: 10px;
+    }
+
+    button{
+        position: static;
+        margin-left: 175px;
+        padding: 20px;
+        max-width: 350px;
+    }
+
+ }

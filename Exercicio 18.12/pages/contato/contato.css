@@ -1,0 +1,131 @@
+@import url('../../styles/global.css');
+
+.desc{
+    text-align: center;
+    font-size: xx-large;
+}
+
+main {
+    display: flex;
+}
+
+.bloco2{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 50%;
+}
+
+.blc2img{
+        width: 500px;
+        position: absolute;
+        display: flex;
+        justify-content: right;
+        border-radius: 35px;
+        justify-content: right;
+}
+
+.bloco1{
+    width: 50%;
+}
+
+
+form {
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px #e6be9a;
+    margin: 100px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin-top: 2px;
+}
+
+input{
+    width: 90%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #1d351d;
+}
+
+button {
+    margin: 15px;
+    width: 20%;
+    padding: 10px;
+    margin: 0 auto ;
+    border-radius: 40px;
+    margin-top: 15px;
+    transition: all ease 0.5s;
+    border: rgb(11, 39, 13) ;
+    background: linear-gradient(90deg, #862a2b, rgb(196, 113, 40) );
+    border: firebrick;
+    color: white;
+}
+
+button:hover{
+    background: linear-gradient(90deg, #bd2225, rgb(225, 132, 51) );
+    transition-duration: 1.5s;
+    
+}
+
+
+table  {
+    margin-top: 15px;
+    border: 1px solid #1d351d;
+    width: 400px;
+    align-items: center;
+}
+
+table td {
+    border: 1px solid #1d351d;
+    
+}
+
+@media (max-width: 480px){
+    
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bloco1{
+        flex: none;
+        width: 100%;
+        padding: 10px;
+    }
+
+    form {
+        width: 300px;
+        display: block;
+    }
+
+    table{
+        width: 200px;
+    }
+
+    button{
+        margin-top: 40px;
+        margin-left: 125px;
+    }
+
+    .bloco2{
+        width: 100%;
+        flex:none;
+        margin-top: 20px;
+    }
+
+    .blc2img{
+        position: unset;
+        width: 400px;
+        margin-top: 10px;
+    }
+
+}

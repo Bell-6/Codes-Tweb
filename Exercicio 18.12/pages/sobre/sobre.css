@@ -1,0 +1,138 @@
+@import url('../../styles/global.css');
+
+.title{
+    font-size:x-large;
+    text-align: center;
+}
+
+.inf1 {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #e6be9a;
+    margin: 100px;
+    max-width: 800px;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.inf1 h3 {
+    color: #fdb500;
+    text-align: center;
+    font-size: x-large;
+}
+
+.inf1 img {
+    padding: 30px; 
+    border-radius: 55px; /* Bordas arredondadas */
+    object-fit: cover;
+    width: 350px;
+    height: 220px;
+}
+
+.inf2{
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #e6be9a;
+    margin: 100px;
+    max-width: 800px;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.inf2 img {
+    padding: 30px; 
+    border-radius: 55px; /* Bordas arredondadas */
+    object-fit: cover;
+    width: 350px;
+    height: 220px;
+}
+
+.inf2 h3{
+    color: #fdb500;
+    text-align: center;
+    font-size: x-large;
+} 
+  
+.inf3 {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #e6be9a;
+    margin: 100px;
+    max-width: 800px;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}   
+
+
+.inf3 img {
+    padding: 30px; 
+    border-radius: 55px; /* Bordas arredondadas */
+    object-fit: cover;
+    width: 350px;
+    height: 220px;  
+}
+
+.inf3 h3 {
+    color: #fdb500;
+    text-align: center;
+    font-size: x-large;
+}
+
+@media (max-width: 480px){
+    section {
+        align-items: center;
+    }
+    .inf1{
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #e6be9a;
+        margin: 50px;
+        max-width: 400px;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    
+    .inf2{
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #e6be9a;
+        margin: 50px;
+        max-width: 400px;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .inf3{
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #e6be9a;
+        margin: 50px;
+        max-width: 400px;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+
+
+
+
+}
