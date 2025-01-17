@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Press Start 2p', cursive;
+    background-color: #008fd1;
+    color: rgb(43, 105, 64);
+}
+
+.pata{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+@keyframes vaca{
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+.haha {
+    height: 10px;
+    margin-top: 20px;
+    background: linear-gradient(124deg, #00a54a, #db0505);
+    border-radius: 5px;
+    background-size: 1800% 1800%;
+    animation: vaca 3s ease infinite;
+                                                                                                                 
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: rgb(19, 202, 202);
+    text-shadow: 3px 3px #da570c;
+    animation: vaca 3s ease infinite;
+    background: linear-gradient(124deg, #0099ad, #00a597, #0ea71b, #f5f100, #d3560e, #d30e0e);
+    background-size: 1800% 1800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #00c8d6;
+}
+
+.video-player{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #d0d30e;
+    border: 4px solid #db0505;
+    overflow: hidden;
+}
+
+video{
+    width: 100%;
+    display: block;
+}
+
+video:focus{
+    outline: none;
+}
+
+@media (max-width: 768px);{
+    h1 {
+        font-size: 18px;
+    }
+}
+.pata {
+    
+}
+
+
