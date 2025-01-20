@@ -1,0 +1,32 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body{
+    font-family: 'Press Start 2p', cursive;
+    background-color: #cd64c8;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    color: #cd64c8;
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+
+}
+
+
+.fotos {
+    align-items: center;
+    display: flex;
+    padding: 50px;
+    margin: 50px;
+}
+
+.foto1_{
+    background-color: white;
+    padding: 10px;
+}
