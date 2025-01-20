@@ -15,18 +15,69 @@ header {
     background-color: white;
     text-align: center;
     padding: 15px;
-
 }
 
-
-.fotos {
-    align-items: center;
+ul{
+    list-style: none;
     display: flex;
-    padding: 50px;
-    margin: 50px;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 12px;
+    margin-top: 40px;
 }
 
-.foto1_{
+
+ul li {
+    width: 30%;
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px #d3d2d2 ;
+    align-items: center;
+}
+
+img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    width: 300px;    
+}
+
+.video-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+video{
+    width: 100%;
+    display: block;
+}
+
+video:focus{
+    outline: none;
+}
+
+.video-player{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #d0d30e;
+    border: 4px solid #db0505;
+    overflow: hidden;
+}
+
+footer {
+    color: #cd64c8;
     background-color: white;
-    padding: 10px;
+    text-align: center;
+    padding: 15px;
 }
