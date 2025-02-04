@@ -4,9 +4,8 @@ main{
     flex-direction: row;
 }
 
-
 .video-dente{
-    max-width: 1200px;
+    width: 750px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -19,13 +18,13 @@ main{
     text-shadow: 3px 3px var(--cor-letra2);
     background-size: 1800% 1800%;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: var(--cor-letra1);
     font-size: xx-large;
 }
 
-
 .video-player{
-    width: 100%;
+    width: 70%;
     max-width: 800px;
     margin: 0 auto;
     background-color: rgb(0, 0, 0);
@@ -33,10 +32,6 @@ main{
     box-shadow: 0 0 20px  rgb(65, 105, 225);
     border: 2px solid  rgb(208, 218, 248);
     overflow: hidden;
-    display: flex;
-}
-
-p{
     display: flex;
 }
 
@@ -54,6 +49,12 @@ video:focus{
     color: #4c6faf;
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards;
+}
+
+.texto-intro{
+    font-size:large;
+    padding: 35px;
+    margin-top: 50px;
 }
 
 @keyframes fadeIn {

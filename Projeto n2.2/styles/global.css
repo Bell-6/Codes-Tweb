@@ -1,12 +1,12 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'segoe UI', sans-serif;
 }
 
 :root {
-    --cor-body:  rgb(177, 203, 233);
+    --cor-body:  #acdcf6;
     --cor--menu:  rgb(109, 152, 231);
     --cor-letra1: rgb(100, 223, 255);
     --cor-letra2: #11c7ca;
@@ -24,7 +24,7 @@ body{
   text-shadow: 3px 3px var(--cor-letra2);
   background-size: 1800% 1800%;
   -webkit-background-clip: text;
-  bac
+  background-clip: text;
   -webkit-text-fill-color: var(--cor-letra1);
 }
 
@@ -49,7 +49,7 @@ nav ul li{
 }
 
 .menu {
-    color: var(--cor--menu) ;
+    color: var(--cor--menu);
     font-size: 20px;
     text-decoration: none;
     padding: 10px 20px;
@@ -64,7 +64,7 @@ nav ul li{
     position: absolute;
     width: 0;
     height: 2px;
-    background:   rgb(65, 105, 225); ;
+    background:   rgb(65, 105, 225);
     transition: all 0.5s;
   }
   
@@ -85,29 +85,25 @@ nav ul li{
   
   .menu:hover::after {
     width: 100%;
-    transition: width 0.25s ease-in-out 0.25s;
-    background: linear-gradient(125 deg, var(--cor--menu), var(--cor-body));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+    transition: width 0.25s ease-in-out;
   }
 
 
 header{
-    display: flex;
-    background-color: white;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 50px;
 }
 
 .logotipo{
-    width: 100px;
-    position: static;
+  width: 100px;
+  position: static;
 }
