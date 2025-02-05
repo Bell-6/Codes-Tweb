@@ -1,0 +1,46 @@
+form {
+    
+    padding: 50px;
+    border-radius: 5px;
+    margin: 100px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 170px;display: flex;
+    background-color: var(--cor--form);
+    box-shadow: 0 0 29px var(--cor-letra1);    
+}
+
+label{
+    display: block;
+    margin-top: 2px;
+}
+
+input, textarea{
+    width: 90%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid var #4c6faf;
+}
+
+button{
+    margin: 15px;
+    width: 20%;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 40px;
+    margin-top: 15px;
+    transition: all ease 0.5s;
+    border: var(--cor-letra1);
+    background-color: gradient linear () ;
+    color: antiquewhite;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+
+
+}

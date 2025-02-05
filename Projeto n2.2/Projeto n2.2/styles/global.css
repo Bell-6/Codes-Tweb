@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'segoe UI', sans-serif;
+}
+
+:root {
+    --cor-body:  white;
+    --cor--menu:  rgb(109, 152, 231);
+    --cor-letra1: #7cccfa;
+    --cor-letra2: rgb(70, 181, 245);
+    --cor--header :#d9edfa;
+    --cor--form:  #92cff3;
+}
+ 
+body{
+    background-color: white;
+ }
+
+.nome_empresa{
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: xx-large;
+  color: var(--cor-letra1);
+  text-shadow: 3px 3px var(--cor-letra2);
+  background-size: 1800% 1800%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: var(--cor-letra1);
+}
+
+ nav ul{
+    padding: 0;
+    display: flex;
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: all ease 0.5s;
+}
+
+nav ul li{
+  color: transparent;
+  text-decoration: none;
+  margin: 0 20px 0;
+  font-size: large;
+  list-style: none;
+}
+
+.menu {
+    color: var(--cor--menu);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .menu::before,
+  .menu::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background:   rgb(65, 105, 225);
+    transition: all 0.5s;
+  }
+  
+  .menu::before {
+    top: 0;
+    left: 0;
+  }
+  
+  .menu::after {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .menu:hover::before {
+    width: 100%;
+    transition: width 0.25s ease-in-out;
+  }
+  
+  .menu:hover::after {
+    width: 100%;
+    transition: width 0.25s ease-in-out;
+  }
+
+
+header{
+  display: flex;
+  background-color: #d9edfa;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.logotipo{
+  width: 100px;
+  position: static;
+}
+
+footer{
+    display: flex;
+    background-color: #d9edfa;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    color: var(--cor--menu);
+}
+
+
