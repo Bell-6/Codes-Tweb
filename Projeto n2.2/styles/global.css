@@ -2,18 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'segoe UI', sans-serif;
+  font-family: Quicksand;
 }
 
 :root {
-    --cor-body:  #acdcf6;
-    --cor--menu:  rgb(109, 152, 231);
-    --cor-letra1: rgb(100, 223, 255);
-    --cor-letra2: #11c7ca;
+    --cor-body:  rgb(245, 249, 251);
+    --cor--menu:  rgb(0, 195, 198);
+    --cor-letra1: rgb(22, 179, 218);
+    --cor-letra2: #00a1a3;
+    --cor-gradient1: #11c7ca;;
+    --cor-gradient2:rgb(109, 152, 231);
+    --cor--form:  #a4dedf;
 }
  
 body{
     background-color: var(--cor-body);
+    font-family:Quicksand;
  }
 
 .nome_empresa{
@@ -26,6 +30,7 @@ body{
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: var(--cor-letra1);
+  margin: 5px;
 }
 
  nav ul{
@@ -43,57 +48,44 @@ nav a {
 nav ul li{
   color: transparent;
   text-decoration: none;
-  margin: 0 20px 0;
+  margin: 0 15px 0;
   font-size: large;
   list-style: none;
 }
 
-.menu {
-    color: var(--cor--menu);
-    font-size: 20px;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .menu::before,
-  .menu::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background:   rgb(65, 105, 225);
-    transition: all 0.5s;
-  }
-  
-  .menu::before {
-    top: 0;
-    left: 0;
-  }
-  
-  .menu::after {
-    bottom: 0;
-    right: 0;
-  }
-  
-  .menu:hover::before {
-    width: 100%;
-    transition: width 0.25s ease-in-out;
-  }
-  
-  .menu:hover::after {
-    width: 100%;
-    transition: width 0.25s ease-in-out;
-  }
+.menu{
+  transition: 0.4s;
+  color: var(--cor--menu);
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  position: relative;
+}
 
+.menu::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--cor--menu);
+  transition: all 0.4s;
+}
+
+.menu:hover::before {
+  width: 100%;
+  left: 0;
+}
 
 header{
   display: flex;
   background-color: white;
   align-items: center;
   justify-content: space-between;
+  box-shadow:0 0 15px var(--cor--menu);
+  
 }
 
 .logo-container{
@@ -106,4 +98,35 @@ header{
 .logotipo{
   width: 100px;
   position: static;
+}
+
+footer{
+  background-color: white;
+  text-align: center;
+  padding: 30px;
+  box-shadow:0 0 10px var(--cor--menu);
+  color: var(--cor--menu);
+  margin-top: 50px;
+}
+
+.scrollToTopBtn {
+  background-color: #850f11;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 48px;
+  width: 48px;
+	  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+	  /* keep it on top of everything else */
+  z-index: 100;
+	  /* hide with opacity */
+  opacity: 0;
+	  /* also add a translate effect */
+  transform: translateY(100px);
+  transition: all .5s ease
 }
