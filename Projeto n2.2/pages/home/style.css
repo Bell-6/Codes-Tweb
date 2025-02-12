@@ -80,7 +80,7 @@ video:focus{
         transform: translateX(200%);
     }
     100% {
-        transform: translateX(0);
+        transform: translateX(57%);
     }
 }
 
@@ -92,5 +92,42 @@ video:focus{
     margin-top: 100px;
 }
 
+.botao-text a {
+    text-decoration: none;
+    color: white;
+}
 
+.botao-text {
+    width: 400px;
+    margin: 5px;
+    border-radius: 40px;
+    padding: 10px;
+    border: none;
+    background-color: var(--cor--botao);
+    transition: all ease 0.5s;
+    margin-top: 10px;
+}
 
+.botao-text:hover {
+    background: #fff;
+    box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
+  }
+
+.botao-text:hover a {
+    color: #0084ff;
+}
+
+.botao-topo:hover {
+    background: #fff;
+    box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
+    transition-duration: 0.5s;
+}
+
+.botao-topo:hover a {
+    color: #0084ff;
+}
+
+@media (max-width: 480px){
+    
+
+ }

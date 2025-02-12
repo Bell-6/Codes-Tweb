@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Quicksand;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 :root {
@@ -13,11 +13,12 @@
     --cor-gradient1: #11c7ca;;
     --cor-gradient2:rgb(109, 152, 231);
     --cor--form:  #a4dedf;
+    --cor--botao:#339DFF;
 }
  
 body{
     background-color: var(--cor-body);
-    font-family:Quicksand;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
 
 .nome_empresa{
@@ -118,7 +119,6 @@ footer{
   font-size: 30px;
   line-height: 48px;
   width: 48px;
-	  /* place it at the bottom right corner */
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -129,4 +129,55 @@ footer{
 	  /* also add a translate effect */
   transform: translateY(100px);
   transition: all .5s ease
+}
+
+.botao-topo{
+  background-color: var(--cor--botao);
+  border-radius: 50px;
+  cursor: pointer;
+  width: 50px;
+  padding:2px;
+  border:none;
+}
+
+.botao-fixo{
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+.botao-topo:hover {
+  background: #fff;
+  box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
+  transition-duration: 0.5s;
+}
+
+.botao-topo:hover a {
+  color: #0084ff;
+}
+
+@media (max-width: 480px){
+
+  header{
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
+  }
+  
+  header h1{
+    text-align: center;
+    margin-top: 40px;
+}
+
+header nav {
+    margin-top: 8px;
+    text-align: center;
+    padding: 2px;
+}
+
+main{
+    flex-direction: column;
+    align-items: center;
+}
+
 }

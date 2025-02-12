@@ -1,0 +1,14 @@
+.foto1{
+    width: 20%;
+    border-radius: 10%;
+    margin-top: 100px;
+    margin: 40px;
+}
+
+.bloco1{
+    width: 50% ;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+

@@ -6,6 +6,7 @@
     <title>Preojeto Final</title>
     <link rel="stylesheet" href="../contatos/contato.css">
     <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="icon" href="../../assets/logo.png" type="image/png">
 </head>
 <body>
     <header>
@@ -17,14 +18,20 @@
     <nav>
         <ul>
             <li><a class="menu" href="../home/index.html">Inicio </a></li>
-            <li><a class="menu" href="../sobre/sobre.html">Sobre Nós</a></li>
+            <li><a class="menu" href="../sobre/sobre.html">Sobre nós</a></li>
             <li><a class="menu" href="../contatos/contato.html"> Contato </a></li>
-            <li><a class="menu" href="../projetos/projetos.html">Projetos</a></li>
+            <li><a class="menu" href="../exames/exame.html">Exames</a></li>        
         </ul>
     </nav>
 
     </header>
-        
+    <div class="banner"> 
+        <picture class="banner_content">
+            <source media="(max-width: 1200px)" srcset="../../assets/banner_cont.png">
+            <source media="(max-width: 400px)" srcset="../../assets/banner_cont.png">
+            <img class="banner_img" src="../../assets/banner_cont.png" alt="">
+        </picture>
+    </div>
     <form action="#" method="post">
 
         <h3> Adicione seu nome, o E-mail e uma mensagem para ser notificado de descontos e promoções</h3>
@@ -34,13 +41,12 @@
         <input type="email" id="Email" name="Email">
         <label for="Mensagem"> Mensagem: </label>
         <input type="text-box" id="Mensagem" name="Mensagem">
-        <button class="envia botao">
-        <span>
+        <a class="envia botao">
             Enviar
-        </span>
-        </button>
+        </a>
     </form>
-    <footer> Desenvolvido por Ana Clara e Maria Isabella © 2025.</footer>
-
+    <footer> Desenvolvido por Ana Clara e Maria Isabella © 2025.
+        <button class="botao-topo"><a href="#top" class="botao-fixo">⬆</a></button>
+    </footer>
 </body>
 </html>

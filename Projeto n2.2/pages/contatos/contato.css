@@ -1,3 +1,22 @@
+.banner_img {
+  width:800px;
+  margin-top: 50px;
+  border-radius: 50px;
+  padding: 40px;
+  transition: all ease 0.5s;
+}
+
+.banner_img:hover{
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px black;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+
 form {
     display: flex;
     background-color: var(--cor--form) ;
@@ -9,7 +28,7 @@ form {
     border-radius: 5px;
     box-shadow: 0 0 20px var(--cor--menu) ; 
     margin: auto;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 label{
@@ -36,17 +55,48 @@ input, textarea{
     cursor: pointer;
     overflow: hidden;
     transition: all 0.3s ease;
+
   }
   
   .botao{
-    background: linear-gradient var(--cor-letra2) no-repeat calc(200% - var(--p, 0%))
-      100% / 200% var(--p, 0.2em);
-    transition: 0.3s var(--t, 0s),
-      background-position 0.3s calc(0.3s - var(--t, 0s));
+      display: inline-block;
+      background: #339DFF;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      width: 15px 5px;
+      text-align: center;
+      margin-top: 10px;
+      margin: 40px;
   }
   
   .botao:hover {
-    --p: 100%;
-    --t: 0.3s;
-    color: #fff;
+    background: #fff;
+    color: #339DFF;
+    box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
   }
+
+.banner_img{
+  transition: all ease 0.5s;
+}
+
+.banner_img:hover{
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px black;
+}
+
+@media (max-width: 480px){
+    
+  main{
+      flex-direction: column;
+      align-items: center;
+  }
+
+  form {
+    width: 300px;
+    display: block;
+}
+
+}
