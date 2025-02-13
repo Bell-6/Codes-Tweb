@@ -83,7 +83,7 @@ input, textarea{
 }
 
 .banner_img:hover{
-  transform: scale(1.05);
+  transform: scale(1.03);
   box-shadow: 0 6px 10px black;
 }
 
@@ -99,4 +99,16 @@ input, textarea{
     display: block;
 }
 
+  .banner_img {
+    width: 440px;
+  }
+
+  form {
+    width: 420px;
+  }
+
+  .botao {
+    margin-top: 30px;
+    margin-left: 95px;
+  }
 }

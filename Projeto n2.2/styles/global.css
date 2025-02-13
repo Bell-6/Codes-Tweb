@@ -156,28 +156,34 @@ footer{
   color: #0084ff;
 }
 
+.icone {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.icone p{
+
+  margin-right: 8px;
+}
+
+.icone a {
+  color: black;
+}
+
 @media (max-width: 480px){
 
   header{
       flex-direction: column;
-      align-items: center;
       padding: 5px;
+      align-items: center;
+
   }
   
-  header h1{
-    text-align: center;
-    margin-top: 40px;
-}
-
-header nav {
-    margin-top: 8px;
-    text-align: center;
-    padding: 2px;
-}
-
-main{
-    flex-direction: column;
-    align-items: center;
-}
-
+  .menu {
+    padding: 0;
+    margin: 0;
+  }
 }

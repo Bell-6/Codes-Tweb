@@ -128,6 +128,27 @@ video:focus{
 }
 
 @media (max-width: 480px){
-    
+    main {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .video-dente{
+        max-width: 480px;
+    }
+
+    .video-player {
+
+        width: 380px;
+    }
+
+    @keyframes slide-in-right {
+        0% {
+            transform: translateX(200%);
+        }
+        100% {
+            transform: translateX(10%);
+        }
+    }
+    
  }

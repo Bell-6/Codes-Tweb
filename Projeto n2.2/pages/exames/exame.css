@@ -152,6 +152,14 @@ li {
     margin-top: 20px;
 }
 
+@media (max-width: 480px) {
+    .img1 {
+        width: 275px;
+    }
+}
+
+
+
 
 
 
